@@ -1,3 +1,3 @@
-# WeatherApp-in-Android-Studio
+# Hotel Booking App
 
-Build Weather App in Android Studio
+Build Hotel Booking App in Android Studio
