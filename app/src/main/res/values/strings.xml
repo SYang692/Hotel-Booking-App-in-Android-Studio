@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">WeatherApp-in-Android-Studio</string>
+    <string name="app_name">HomeBookingApp-in-Android-Studio</string>
+
+    <string-array name="type">
+        <item>Select Room</item>
+        <item>Room</item>
+        <item>Studio</item>
+    </string-array>
 </resources>
