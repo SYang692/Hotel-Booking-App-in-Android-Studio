@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_menu_background"
+    tools:context=".LoginActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Page"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:fontFamily="casual"
+        android:id="@+id/header"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:id="@+id/room_name"
+        android:textSize="30dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/room_name"
+        android:inputType="textEmailAddress"
+        android:hint="Please Enter Email Address"
+        android:id="@+id/edEmail"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edEmail"
+        android:hint="Please Enter Password"
+        android:inputType="textPassword"
+        android:id="@+id/edPass"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edPass"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:textSize="20dp"
+        />
+
+
+</RelativeLayout>
