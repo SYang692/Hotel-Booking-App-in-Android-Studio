@@ -58,21 +58,6 @@ public class RoomInfoActivity extends AppCompatActivity {
             }
         });
 
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(RoomInfoActivity.this, FinalActivity.class);
-                i.putExtra("name", name);
-                i.putExtra("phone", phone);
-                i.putExtra("email", email);
-                i.putExtra("CheckIn", editText.getText().toString());
-                i.putExtra("CheckOut", edCheckOut.getText().toString());
-
-                startActivity(i);
-            }
-        });
-
         DatePickerDialog.OnDateSetListener date2 = new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
@@ -100,10 +85,13 @@ public class RoomInfoActivity extends AppCompatActivity {
                 i.putExtra("phone", phone);
                 i.putExtra("email", email);
                 i.putExtra("CheckIn", editText.getText().toString());
+                i.putExtra("CheckOut", edCheckOut.getText().toString());
 
                 startActivity(i);
             }
         });
+
+
     }
 
     private void updateLabel(Calendar myCalendar, EditText editText){

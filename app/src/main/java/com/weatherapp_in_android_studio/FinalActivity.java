@@ -24,7 +24,11 @@ public class FinalActivity extends AppCompatActivity {
         CheckoutDate = getIntent().getStringExtra("CheckOut");
 
         textView.setText(
-                "Name" + name+email+phone+CheckinDate+CheckoutDate
+                "Name: " + name + "\n" +
+                "Email: " + email + "\n" +
+                "Phone: " + phone + "\n" +
+                "CheckinDate: " + CheckinDate + "\n" +
+                "CheckoutDate: " + CheckoutDate + "\n"
         );
     }
 }
