@@ -1,18 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/main_menu_background"
+    android:layout_gravity="center"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:textColor="#2039C2"
+                android:text="Hotel Booking App"
+                android:fontFamily="casual"/>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/background" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="235dp"
+            android:layout_height="163dp"
+            android:layout_gravity="center"
+            android:src="@drawable/single_bed" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#6C3524"
+            android:text="Room, 1 King Bed"
+            android:layout_gravity="center"
+            android:fontFamily="casual"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#6C3524"
+            android:text="* Free WiFi   * 300 sq ft   * Free self parking   * Sleeps 3"
+            android:layout_gravity="center"
+            android:fontFamily="casual"/>
+
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="235dp"
+            android:layout_height="163dp"
+            android:layout_gravity="center"
+            android:src="@drawable/studio_suite" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#6C3524"
+            android:text="Studio Suite, 1 King Bed"
+            android:layout_gravity="center"
+            android:fontFamily="casual"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#6C3524"
+            android:text="* Free WiFi   * 500 sq ft   * Free self parking   * Sleeps 5"
+            android:layout_gravity="center"
+            android:fontFamily="casual"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
